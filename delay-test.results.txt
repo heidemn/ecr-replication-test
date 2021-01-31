@@ -1,0 +1,20 @@
+16.04:
+    size: 131.7 MB
+    delay: 3rd "docker pull" succeeded (= after 2x "sleep 1")
+
+18.04:
+    size: 63.6 MB
+    delay: 3rd "docker pull" succeeded
+
+20.04:
+    size: 72.9 MB
+    delay: 3rd "docker pull" succeeded
+
+Source repo:
+  - tag immutability: on
+  - scan on push: on
+  - encryption: kms
+(!) Destination repo (implicitly created):
+  - tag immutability: OFF
+  - scan on push: OFF
+  - encryption: AES-256
